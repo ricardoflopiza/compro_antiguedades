@@ -11,7 +11,7 @@ const BASE = import.meta.env.PROD
 export default defineConfig({
   // tu dominio custom en prod
   site: import.meta.env.PROD
-    ? "https://antiguedades.midominio.com"
+    ? "https://www.comproantiguedades.cl"
     : "http://localhost:4322",
 
   base: BASE,
