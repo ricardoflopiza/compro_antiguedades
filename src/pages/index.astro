@@ -7,6 +7,7 @@ import CompraVentaSection from "~/components/CompraVentaSection.astro";
 import NoCompramosSection from "~/components/NoCompramosSection.astro";
 import ComoVenderSection from "~/components/ComoVenderSection.astro";
 import RentingSection from "~/components/RentingSection.astro";
+import { getAssetPath } from "../utils/paths.js";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -20,7 +21,7 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={getAssetPath("favicon.svg")} type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
     <title>Astro Landing Page</title>
@@ -133,28 +134,28 @@ const description =
               <ul class="thb-widget-menu">
                 <li class="">
                   <a
-                    href="/policies/terms-of-service"
+                    href={getAssetPath("policies/terms-of-service")}
                     title="Compras"
                     class="hover:underline">Compras</a
                   >
                 </li>
                 <li class="">
                   <a
-                    href="/policies/shipping-policy"
+                    href={getAssetPath("policies/shipping-policy")}
                     title="Sobre los envíos"
                     class="hover:underline">Sobre los envíos</a
                   >
                 </li>
                 <li class="">
                   <a
-                    href="/policies/privacy-policy"
+                    href={getAssetPath("policies/privacy-policy")}
                     title="Política de Privacidad"
                     class="hover:underline">Política de Privacidad</a
                   >
                 </li>
                 <li class="">
                   <a
-                    href="/policies/refund-policy"
+                    href={getAssetPath("policies/refund-policy")}
                     title="Política de Devoluciones"
                     class="hover:underline">Política de Devoluciones</a
                   >
@@ -278,9 +279,7 @@ const description =
           </div>
           <div>
             <div class="widget widget--custom">
-              <div class="thb-widget-title mb-2 font-bold text-lg">
-                PAGA SEGURO CON
-              </div>
+              <div class="thb-widget-title mb-2 font-bold text-lg"></div>
               <div id="ss-payment-icons"></div>
             </div>
           </div>
@@ -291,11 +290,7 @@ const description =
           <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div>
               <p>
-                © 2025 Bucarest Art Gallery, Todos los derechos reservados. <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="//es.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
-                  class="hover:underline">Tecnología de Shopify</a>
+                © 2025 Bucarest Art Gallery, Todos los derechos reservados.
               </p>
             </div>
           </div>

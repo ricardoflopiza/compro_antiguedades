@@ -1,5 +1,5 @@
 ---
-
+import { getAssetPath } from "../utils/paths.js";
 ---
 
 <section class="bg-gray-50 px-8 py-16">
@@ -21,7 +21,7 @@
             Para Eventos
           </h3>
           <img
-            src="/compro_antiguedades/assets/Escultura-2.webp"
+            src={getAssetPath("assets/Escultura-2.webp")}
             alt="Antigüedades para eventos"
             class="mb-4 h-48 w-full rounded-lg object-cover"
           />
@@ -47,7 +47,7 @@
             Para Producciones
           </h3>
           <img
-            src="/compro_antiguedades/assets/9.avif"
+            src={getAssetPath("assets/9.avif")}
             alt="Antigüedades para producciones"
             class="mb-4 h-48 w-full rounded-lg object-cover"
           />
