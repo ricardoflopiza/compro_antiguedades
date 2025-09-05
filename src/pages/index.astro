@@ -24,12 +24,26 @@ const description =
       name="viewport"
       content="width=device-width, initial-scale=1.25, maximum-scale=1.25"
     />
+
     <link rel="icon" href={getAssetPath("favicon.svg")} type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
     <title>Astro Landing Page</title>
     <meta name="description" content={description} />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17534481948"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17534481948");
+    </script>
     <!-- social media -->
 
     <!-- initialize theme -->
