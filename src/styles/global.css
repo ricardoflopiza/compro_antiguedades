@@ -1,4 +1,8 @@
 /* TODO: consider creating <Button> and <GradientText> components */
+
+* {
+  font-family: 'Instrument Sans', sans-serif;
+}
 a,
 .btn {
   @apply transition-colors duration-200;

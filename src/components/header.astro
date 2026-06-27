@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
+import { getAssetPath } from "../utils/paths.js";
 
 // const navItems: Array<NavItem> = [
 //   { title: "Features", url: "#features" },
@@ -14,11 +15,13 @@ import type { NavItem } from "~/types";
   id="page-header"
   class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
-  <!-- <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
-    <Icon name="logomark" class="size-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" />
-  </a> -->
+  <a href="/" class="flex items-center">
+    <img
+      src={getAssetPath("assets/logo.png")}
+      alt="Bucarest Art Gallery"
+      class="h-10 w-auto"
+    />
+  </a>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
